@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
@@ -8,7 +8,7 @@ import Services from "./routes/Services.jsx";
 import Cars from "./routes/Cars.jsx";
 import About from "./routes/About.jsx";
 import Contact from "./routes/Contact.jsx";
-
+import "./config/i18next.js";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,7 +26,9 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router}>
-      <App />
+      <React.Suspense>
+        <App />
+      </React.Suspense>
     </RouterProvider>
   </StrictMode>
 );

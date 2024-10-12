@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
 @layer base {
   :root {
     /* Custom Variables */
@@ -119,6 +120,17 @@
 .font-montserrat {
   font-family: "Montserrat", sans-serif;
 }
+
+.font-jakarta{
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.font-redhat{
+  font-family: "Red Hat Text", sans-serif;
+}
+.font-arabic{
+  font-family: "Readex Pro", sans-serif;
+}
+
 
 /* Line Heights */
 .line-height-1 {
