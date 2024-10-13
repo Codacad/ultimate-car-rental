@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom";
 import { IoLockClosed } from "react-icons/io5";
 import { RiMenu5Line } from "react-icons/ri";
-import Logo from "/logo.svg";
+import Logo from "/logo2.gif";
 import { useTranslation } from "react-i18next";
 import { IoLogIn } from "react-icons/io5";
 const Navbar = () => {
   const { t } = useTranslation();
   return (
     <>
-      <nav className="w-full md:py-8 md:px-16 p-4 flex justify-between items-center ">
+      <nav className="w-full text-gray-950 md:py-8 md:px-16 p-4 flex justify-between items-center  font-barlow">
         <div className="logo">
           <Link to={"/"} className="logo">
             <img src={Logo} className="w-32" alt="" />
           </Link>
         </div>
         <div className="navitems md:block hidden">
-          <ul className="flex gap-4">
+          <ul className="flex gap-8">
             <li className="flex">
               <Link className="home block p-3" to={"/"}>
                 {t("navbar.home")}
@@ -54,7 +54,7 @@ const Navbar = () => {
           </Link>
           <Link
             to={"/register"}
-            className="register flex items-center gap-1 app-bg-primary text-white px-4 py-2 rounded-md"
+            className="register button-hover-primary flex items-center gap-1 app-bg-primary text-white px-4 py-2 rounded-md"
           >
             <IoLockClosed />
             <span>{t("navbar.register")}</span>
@@ -68,7 +68,7 @@ const Navbar = () => {
           </Link> */}
         </div>
         <div className="hamburger md:hidden block">
-          <RiMenu5Line className="text-2xl cursor-pointer" />
+          <RiMenu5Line className="text-2xl app-primary cursor-pointer" />
         </div>
       </nav>
     </>

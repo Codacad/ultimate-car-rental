@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap");
 @layer base {
   :root {
     /* Custom Variables */
-    --color-app-primary: #6439ff;
+    --color-app-primary: #f65519;
     --color-app-secondary: #f5efff;
     --color-app-wedding: #f5eded;
     --color-app-light: #fff6f6;
@@ -116,21 +116,36 @@
   background-color: var(--color-app-navy);
 }
 
-/* Font Families */
+/* Fonts */
 .font-montserrat {
   font-family: "Montserrat", sans-serif;
 }
-
-.font-jakarta{
+.font-jakarta {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-.font-redhat{
+.font-redhat {
   font-family: "Red Hat Text", sans-serif;
 }
-.font-arabic{
+.font-arabic {
   font-family: "Readex Pro", sans-serif;
 }
-
+/* Custom Fonts/Downloaded */
+@font-face {
+  font-family: "Lato Black", sans-serif;
+  src: url("./assets/fonts/Lato/Lato-Black.ttf");
+}
+@font-face {
+  font-family: "Barlow", sans-serif;
+  src: url("./assets/fonts/barlow/Barlow-Regular.ttf");
+}
+@font-face {
+  font-family: "Caudex", sans-serif;
+  src: url("./assets/fonts/caudex/Caudex-Regular.ttf");
+}
+@font-face {
+  font-family: "Forum", sans-serif;
+  src: url("./assets/fonts/forum/Forum-Regular.ttf");
+}
 
 /* Line Heights */
 .line-height-1 {
@@ -144,4 +159,37 @@
 }
 .line-height-6 {
   line-height: 1.6;
+}
+.line-height-7 {
+  line-height: 1.7;
+}
+.line-height-8 {
+  line-height: 1.8;
+}
+
+/* Addtional */
+* {
+  will-change: transform, opacity;
+}
+
+/* button hover */
+.button-hover-primary {
+  position: relative;
+}
+.button-hover-primary::after {
+  position: relative;
+  transition: all 1s;
+  width: 100%;
+  border-radius: 7px;
+}
+.button-hover-primary::after:hover {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  left: 0;
+  background-color: var(--color-app-navy);
+  color: var(--color-app-light);
 }

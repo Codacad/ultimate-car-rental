@@ -11,6 +11,10 @@
   "showcase": {
     "subheading": "Drive with Confidence in Dubai",
     "heading": "Experience Affordable Car Rentals Tailored for Every Journey in Dubai",
-    "text": "Discover a wide range of well-maintained cars for rent in Dubai. Enjoy a smooth booking experience excellent service, and vehicles suited for every occasion—business, leisure, or adventure."
+    "text": "Discover a wide range of well-maintained cars for rent in Dubai. Enjoy a smooth booking experience excellent service, and vehicles suited for every occasion—business, leisure, or adventure.",
+    "actions": {
+      "book": "Book",
+      "read-more": "Read More"
+    }
   }
 }

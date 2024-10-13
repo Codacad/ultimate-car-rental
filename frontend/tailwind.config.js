@@ -4,6 +4,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        latoBlack: ["'Lato'", 'sans-serif'],
+        barlow: ["'Barlow'", 'sans-serif'],
+        caudex: ["'Caudex'", 'serif'],
+        forum: ["'Forum'", 'serif'],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
