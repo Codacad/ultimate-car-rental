@@ -58,21 +58,21 @@ const Showcase = () => {
     <>
       <div
         ref={container}
-        className="showcase min-h-screen md:px-16 font-barlow"
+        className="showcase min-h-screen lg:px-16 font-barlow"
       >
         <div className="w-full relative min-h-screen">
           <div className="image md:rounded-[50px] w-full min-h-screen bg-[url('/images/porsche.webp')] bg-[100%] bg-cover bg-no-repeat"></div>
           <div className="absolute rounded-[50px] w-full min-h-full flex justify-center items-center ml-auto text-center z-10 top-0  bg-[rgba(0,0,0,.5)]">
-            <div className="flex justify-center items-center flex-col md:w-[70%]">
-              <img src={ShowcaseLogo} alt="" />
+            <div className="flex justify-center items-center flex-col lg:w-[70%] md:w-[80%] max-md:w-[90%]">
+              <img className="max-lg:w-24" src={ShowcaseLogo} alt="" />
               <h3
                 ref={h3}
-                className="sub-heading flex items-center gap-2 text-white text-xl font-bold rounded-sm p-1"
+                className="sub-heading flex items-center gap-2 text-white lg:text-xl font-bold rounded-sm p-1"
               >
                 <FaCar />
                 <span>{t("showcase.subheading")}</span>
               </h3>
-              <h1 className="heading tracking-loose md:text-6xl lg:text-7xl text-3xl mt-4 font-bold app-primary">
+              <h1 className="heading tracking-loose lg:text-6xl lg:text-7xl text-3xl mt-4 font-bold app-primary">
                 {t("showcase.heading")}
               </h1>
               <p className="text text-gray-200 mt-6 md:px-16 px-4 line-height-8">

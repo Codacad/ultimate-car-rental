@@ -1,4 +1,5 @@
 import About from "@/components/home/About";
+import Services from "@/components/home/Services";
 import Showcase from "@/components/home/Showcase";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
       <div className="main">
         <Showcase />
         <About />
+        <Services />
       </div>
     </>
   );

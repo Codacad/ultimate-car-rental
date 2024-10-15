@@ -8,14 +8,14 @@ const Navbar = () => {
   const { t } = useTranslation();
   return (
     <>
-      <nav className="w-full text-gray-950 md:py-8 md:px-16 p-4 flex justify-between items-center  font-barlow">
+      <nav className="w-full text-gray-950 md:py-8 lg:px-16 p-4 flex justify-between items-center font-barlow">
         <div className="logo">
           <Link to={"/"} className="logo">
             <img src={Logo} className="w-32" alt="" />
           </Link>
         </div>
         <div className="navitems md:block hidden">
-          <ul className="flex gap-8">
+          <ul className="flex lg:gap-8 gap-2 font-bold">
             <li className="flex">
               <Link className="home block p-3" to={"/"}>
                 {t("navbar.home")}

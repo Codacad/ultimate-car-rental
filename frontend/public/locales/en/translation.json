@@ -16,5 +16,23 @@
       "book": "Book",
       "read-more": "Read More"
     }
+  },
+  "home_about": {
+    "subheading": "About Us",
+    "heading": "Your trusted partner in reliable car rental",
+    "text": "Experience hassle-free car rentals with our trusted service. Whether for business or leisure, we offer a wide range of reliable vehicles to suit your needs.",
+    "easy_booking": {
+      "heading": "Easy Booking Process",
+      "text": "Our streamlined booking process ensures a quick, secure, and hassle-free experience, allowing you to reserve your preferred vehicle in just a few simple steps."
+    },
+    "pickup": {
+      "heading": "Convenient Pick-up & Return Process",
+      "text": "Our seamless pick-up and return process offers flexibility and convenience, making it easy for you to start and finish your rental on your terms."
+    },
+    "contact": "Contact Us"
+  },
+  "home_services":{
+    "subheading":"Our Services",
+    "heading":"Explore our wide range of rental services"
   }
 }
